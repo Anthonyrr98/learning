@@ -1,0 +1,26 @@
+SYSTEM = 6-0
+Global Parameters
+  ISTART =  1           (Read existing wavefunction; if there)
+  ISPIN  =  2
+  ICHARG =  11         (Non-self-consistent: GGA/LDA band structures)
+  LREAL  = .F.          (Projection operators: automatic)
+PREC   =  Normal       (Precision level)
+  ADDGRID= .TRUE.        (Increase grid; helps GGA convergence)
+  NCORE = 8
+  ENCUT=500
+  NSW = 0
+  IBRION =  -1
+  
+Static Calculation
+  ISMEAR =  -5           (gaussian smearing method)
+  SIGMA  =  0.05         (please check the width of the smearing)
+  NELM   =  60           (Max electronic SCF steps)
+  EDIFF  =  1E-06        (SCF energy convergence; in eV)
+  ISYM   =  0
+  NBANDS =  256
+
+
+ LORBIT =  11           (PAW radii for projected DOS)
+ NEDOS  =  2001         (DOSCAR points)
+ EMIN   =  -30
+ EMAX   =  30           (DOS fanwei)
